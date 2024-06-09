@@ -55,7 +55,7 @@ const Page = () => {
                 <TouchableOpacity
                   style={[defaultStyles.pillButtonXs, { backgroundColor: Colors.primary, marginVertical: 5 }]}
                   onPress={() => {
-                    queryClient.setQueryData(["investment", invest.id], invest);
+                    queryClient.setQueryData(["investment-details", invest.id], invest);
                     router.push({
                       pathname: `(authenticated)/investmentDetails/${invest.id}`,
                     });
